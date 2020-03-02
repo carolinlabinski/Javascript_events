@@ -71,17 +71,19 @@ for(let i = 0; i < BtnView.length; i++){
  });
     }
 
+//exo 7
+var BtnGrey = document.getElementsByClassName('btn btn-secondary my-2')[0];
+const cardUnit = document.getElementsByClassName('col-md-4');
+var parentNode = cardUnit[0].parentNode;
 
+BtnGrey.addEventListener("click", function (){
+    parentNode.insertBefore(cardUnit[5], cardUnit[0]);
+})
 
+//exo 8
+var BtnBlue = document.getElementsByClassName("btn btn-primary my-2")[0];
 
- 
-
-
-
-
-
-
-
-
-
-
+BtnBlue.addEventListener("click", function(event){
+    event.preventDefault();
+    parentNode.insertBefore(cardUnit[0], cardUnit[6]) 
+})
