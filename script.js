@@ -30,6 +30,7 @@ var clickOnEdit = function () {
     TexteCard1.style.color = "red"
 };
 
+ // exo 4
 EditBtn.addEventListener("click", clickOnEdit);
 
 var EditBtn2 = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[1];
